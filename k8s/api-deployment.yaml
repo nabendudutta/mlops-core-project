@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: loksai-api-deploy
+  name: nabendu-api-deploy
 spec:
   replicas: 1
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: loksaieta/loksai-mlops830api:latest
+        image: nabendu89/nabendu-mlops830api:latest
         ports:
         - containerPort: 8000
 ---
